@@ -13,10 +13,10 @@ def docx_table_to_csv(docx_path, csv_path):
     
     with open(csv_path, mode='w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
-        writer.writerow(["Coluna 1", "Coluna 2"])  # Cabeçalhos
+        writer.writerow(["Coluna 1", "Coluna 2"])  # Columns
         writer.writerows(data)
     
-    print(f"Arquivo CSV salvo em: {csv_path}")
+    print(f"File saved: {csv_path}")
 
-# Exemplo de uso
+
 docx_table_to_csv("file.docx", "output".csv")
